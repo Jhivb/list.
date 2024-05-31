@@ -1,0 +1,65 @@
+:root{
+    --lightblue: #ADD8E6;
+    --white: #ffffff;
+    --grey21: #363636;
+}
+.light-theme{
+    --bg:var(--lightblue);
+    --fontColor:var(--grey21);
+}
+.dark-theme{
+    --bg:var(--black);
+    --fontColor:var(--grey21);
+}
+*{
+    color: var(--fontColor);
+    font-family: helvetica;
+    
+}
+body{
+    background: var(--bg);
+}
+.btn{
+    position: absolute;
+    top: 1px;
+    left: 1214px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+.btn :focus {outline-style: none;}
+.light-theme{
+    --bg:var(--lightblue);
+    --fontColor:var(--grey21);
+    --btnBg:var(--grey21);
+    --btnFontColor:var(--white);
+}
+.dark-theme{
+    --bg:var(--grey21);
+    --fontColor:var(--lightblue);
+    --btnBg:var(--white);
+    --btnFontColor:var(--grey21)
+}
+h1{
+    font-size: 48px;
+}
+li{
+    margin-bottom: 24px;
+    font-size: 24px;
+}
+input{
+    height: 48px;
+    background-color: transparent;
+    border-radius: 4px;
+    font-size: 16px;
+}
+button{
+    font-size: 16px;
+    padding: 16px;
+    background-color: transparent;
+    border-radius: 4px;
+    font-weight: bold;
+}
